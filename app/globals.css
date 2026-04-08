@@ -60,3 +60,24 @@ body {
 .fade-in-child.visible > *:nth-child(4) { opacity: 1; transform: translateY(0); transition-delay: 240ms; }
 .fade-in-child.visible > *:nth-child(5) { opacity: 1; transform: translateY(0); transition-delay: 320ms; }
 .fade-in-child.visible > *:nth-child(6) { opacity: 1; transform: translateY(0); transition-delay: 400ms; }
+
+/* Selection */
+::selection {
+  background-color: rgba(34, 214, 138, 0.25);
+  color: #fff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0B;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
